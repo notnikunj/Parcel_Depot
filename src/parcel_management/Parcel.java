@@ -1,7 +1,7 @@
 package parcel_management;
 
 public class Parcel {
-    private int id;
+    private String id;
     private double height;
     private double width;
     private double length;
@@ -10,7 +10,7 @@ public class Parcel {
     private int days_uncollected;
     private boolean collected;
 
-    public Parcel(int id, double height, double width, double length, double weight, String description) {
+    public Parcel(String id, double height, double width, double length, double weight, String description) {
         this.id = id;
         this.height = height;
         this.width = width;
@@ -23,7 +23,7 @@ public class Parcel {
     }
 
     //getters
-    public int getId() {
+    public String getId() {
         return id;
     }
     public String getDescription() {
