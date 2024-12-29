@@ -4,6 +4,7 @@ import java.util.Queue;
 
 public class QueofCustomers {
     private Queue<Customer> customers;
+
     public QueofCustomers() {
         customers = new LinkedList<>();
     }
@@ -15,5 +16,11 @@ public class QueofCustomers {
     }
     public void removeCustomer(Customer customer) {
         customers.remove(customer);
+    }
+    public boolean isEmpty() {
+        return customers.isEmpty();
+    }
+    public Customer dequeue(){
+        return customers.poll();
     }
 }

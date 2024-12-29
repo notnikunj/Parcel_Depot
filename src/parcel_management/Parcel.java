@@ -32,6 +32,15 @@ public class Parcel {
     public double getWeight() {
         return weight;
     }
+    public double getHeight() {
+        return height;
+    }
+    public double getLength() {
+        return length;
+    }
+    public double getWidth() {
+        return width;
+    }
     public int getDays_uncollected() {
         return days_uncollected;
     }
