@@ -1,5 +1,6 @@
 package parcel_management;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class QueofCustomers {
@@ -11,8 +12,8 @@ public class QueofCustomers {
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
-    public Queue<Customer> getCustomers() {
-        return customers;
+    public List<Customer> getCustomers() {
+        return new LinkedList<>(customers); // Convert to List for easy manipulation
     }
     public void removeCustomer(Customer customer) {
         customers.remove(customer);

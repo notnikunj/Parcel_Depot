@@ -1,5 +1,7 @@
 package parcel_management;
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class ParcelMap {
@@ -14,8 +16,8 @@ public class ParcelMap {
     public Parcel getParcel(String id) {
         return parcels.get(id);
     }
-    public HashMap<String, Parcel> getAllParcels() {
-        return parcels;
+    public List<Parcel> getAllParcels() {
+        return new ArrayList<Parcel>(parcels.values());
     }
     public void removeParcel(String id) {
         parcels.remove(id);

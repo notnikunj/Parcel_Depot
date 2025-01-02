@@ -61,4 +61,13 @@ public class Parcel {
     public void setDays_uncollected(int days_uncollected) {
         this.days_uncollected = days_uncollected;
     }
+
+    public String toString() {
+        return "ID=" + id +
+                ", Weight=" + weight +
+                ", Length=" + length +
+                ", Width=" + width +
+                ", Height=" + height +
+                ", Description='" + description + "'";
+    }
 }
